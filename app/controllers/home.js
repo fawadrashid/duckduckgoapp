@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
       articles: articles
     });
 
-    fs.writeFile("/subscriptions/33b0c3a2-7b90-4298-8c07-023605a1fb6d/resourceGroups/NodeJs/providers/Microsoft.Storage/storageAccounts/ndatastorage/test", "Hey there!", function(err) {
+    fs.writeFile("public/tmp/test", "Hey there!", function(err) {
     if(err) {
         return console.log(err);
     }
