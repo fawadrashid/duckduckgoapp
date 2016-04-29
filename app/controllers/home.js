@@ -1,3 +1,5 @@
+var fs = require('fs');
+
 var express = require('express'),
   router = express.Router(),
   Article = require('../models/article');
@@ -12,4 +14,12 @@ router.get('/', function (req, res, next) {
       title: 'Generator-Express MVC',
       articles: articles
     });
+
+    fs.writeFile("/tmp/test", "Hey there!", function(err) {
+    if(err) {
+        return console.log(err);
+    }
+
+    console.log("The file was saved!");
+}); 
 });
