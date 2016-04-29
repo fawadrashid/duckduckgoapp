@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
       articles: articles
     });
 
-    fs.writeFile("/tmp/test", "Hey there!", function(err) {
+    fs.writeFile("public/tmp/test", "Hey there!", function(err) {
     if(err) {
         return console.log(err);
     }
