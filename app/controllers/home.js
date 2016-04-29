@@ -19,6 +19,10 @@ router.get('/', function (req, res, next) {
     if(err) {
         return console.log(err);
     }
+    else {
+    	return console.log("Hurray!!!!");
+    }
+
 
     console.log("The file was saved!");
 }); 
